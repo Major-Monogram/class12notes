@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.nav {
+    display: flex;
+    gap: 15px;
+}
+.nav a {
+    font-size: 18px;
+    color: blue;
+    text-decoration: none;
+}
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Table */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    max-width: 100%;
+    overflow-x: auto;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+.footer img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .title {
+        font-size: 28px;
+        margin-left: 0;
+    }
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav a {
+        font-size: 16px;
+    }
+    .notes-list {
+        margin-left: 20px;
+    }
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+    .footer {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .footer img {
+        width: 30px;
+        height: 30px;
+    }
+}
